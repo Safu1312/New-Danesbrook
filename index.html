@@ -63,6 +63,7 @@
       <div class="hidden md:block">
         <div class="ml-10 flex items-baseline space-x-8">
           <a href="#hero" class="text-primary font-semibold px-3 py-2 rounded-md text-sm transition-gentle">Home</a>
+          <a href="#about" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-gentle">About</a>
           <a href="#ourcare" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-gentle">Our Care</a>
           <a href="#lifeat" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-gentle">Life At</a>
           <a href="#theteam" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-gentle">The Team</a>
@@ -85,6 +86,7 @@
     <div id="mobile-menu" class="md:hidden hidden">
       <div class="px-2 pt-2 pb-3 space-y-1 bg-white border-t border-surface">
         <a href="#hero" class="text-primary font-semibold block px-3 py-2 rounded-md text-base">Home</a>
+        <a href="#about" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base transition-gentle">About</a>
         <a href="#ourcare" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base transition-gentle">Our Care</a>
         <a href="#lifeat" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base transition-gentle">Life At</a>
         <a href="#theteam" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base transition-gentle">The Team</a>
@@ -678,7 +680,8 @@
 </style>
 
 <!-- ===== JS ===== -->
-<script>const slides = document.querySelectorAll('.slide');
+<script>
+const slides = document.querySelectorAll('.slide');
 const dotsContainer = document.querySelector('.dots');
 const prevBtn = document.querySelector('.prev');
 const nextBtn = document.querySelector('.next');
@@ -809,7 +812,7 @@ window.addEventListener('load', () => {
     Our <span class="text-primary">Mission</span>
   </h1>
 
-  <blockquote class="mission-quote scroll-animate fade-in mx-auto max-w-4xl p-8 sm:p-10 max-[640px]:p-4 rounded-xl shadow-lg text-center" data-delay="400">
+  <blockquote class="mission-quote scroll-animate fade-in mx-auto max-w-4xl p-8 sm:p-10 max-[640px]:p-4 rounded-xl shadow-lg text-center" data-delay="400" style="margin-top: -35px;">
     <p class="text-xl sm:text-4xl md:text-3xl leading-relaxed max-[640px]:leading-snug text-center">
         <!-- Desktop version -->
         <span class="hidden md:block">
@@ -829,7 +832,7 @@ window.addEventListener('load', () => {
 </section>
 
 <!-- Company Statistics -->
-<section class="py-12 max-[640px]:py-8 bg-white">
+<section class="py-12 max-[640px]:py-8 bg-white" >
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
     <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-[640px]:gap-4 mb-6">
       <div class="group max-[640px]:p-2">
@@ -855,7 +858,7 @@ window.addEventListener('load', () => {
     </div>
 
 <!-- Over Two Decades Text -->
-<div class="scroll-animate fade-sides mx-auto px-4 sm:px-6 max-w-[1024px]" data-delay="00">
+<!-- <div class="scroll-animate fade-sides mx-auto px-4 sm:px-6 max-w-[1024px]" data-delay="00">
   <p class="text-2xl sm:text-3xl text-gray-600 leading-snug sm:leading-relaxed font-medium text-center">
     A home filled with 
     <span class="text-primary font-semibold">warmth</span>, 
@@ -863,7 +866,7 @@ window.addEventListener('load', () => {
     <span class="text-primary font-semibold">belonging</span> — these are the principles that 
     guide our <span class="text-primary font-semibold">care</span>.
   </p>
-</div>
+</div> -->
 
 </section>
 
@@ -985,10 +988,10 @@ window.addEventListener('load', () => {
                     <span class="absolute -bottom-3 left-0 right-0 h-2 bg-gradient-to-r from-blue-500 to-purple-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></span>
                 </span>
             </h2>
-            <p class="text-xl lg:text-2xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
+            <!-- <p class="text-xl lg:text-2xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
                 We are committed to making a tangible difference to the lives of our residents & their families. 
                 We strive to create a "home from home", where our residents feel Valued, comfortable & safe.
-            </p>
+            </p> -->
         </div>
 
 <!-- Professional Services Grid -->
@@ -1007,12 +1010,11 @@ window.addEventListener('load', () => {
         <div class="p-6">
             <h3 class="text-xl font-bold text-secondary mb-3">Residential Care</h3>
             <p class="text-gray-600 leading-relaxed mb-4">24/7 professional care in a warm, supportive environment designed for comfort and dignity.</p>
-            <div class="flex items-center text-blue-600 font-semibold text-sm">
-                <span class="text-primary">Learn more</span>
+            <!-- <div class="flex items-center text-blue-600 font-semibold text-sm">
                 <svg class="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                 </svg>
-            </div>
+            </div> -->
         </div>
     </div>
 
@@ -1029,10 +1031,10 @@ window.addEventListener('load', () => {
             <h3 class="text-xl font-bold text-secondary mb-3">Dementia Care</h3>
             <p class="text-gray-600 leading-relaxed mb-4">Specialized compassionate care with memory-enhancing activities and therapies.</p>
             <div class="flex items-center text-purple-600 font-semibold text-sm">
-                <span class="text-primary">Learn more</span>
+                <!-- <span class="text-primary">Learn more</span>
                 <svg class="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                </svg>
+                </svg> -->
             </div>
         </div>
     </div>
@@ -1049,12 +1051,12 @@ window.addEventListener('load', () => {
         <div class="p-6">
             <h3 class="text-xl font-bold text-secondary mb-3">Day Care</h3>
             <p class="text-gray-600 leading-relaxed mb-4">Engaging daytime activities with professional care and social interaction in a safe environment.</p>
-            <div class="flex items-center text-green-600 font-semibold text-sm">
+            <!-- <div class="flex items-center text-green-600 font-semibold text-sm">
                 <span class="text-primary">Learn more</span>
                 <svg class="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                 </svg>
-            </div>
+            </div> -->
         </div>
     </div>
 </div>
@@ -1066,9 +1068,7 @@ window.addEventListener('load', () => {
                 <h2 class="text-3xl lg:text-4xl font-headline font-bold text-text-primary mb-4">
                     What <span class="text-primary">Families Say</span>
                 </h2>
-                <p class="text-lg text-text-secondary max-w-2xl mx-auto">
-                    The trust families place in us is our greatest honor. Here are their authentic experiences with our care approach.
-                </p>
+                
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -1149,7 +1149,7 @@ I live away, but have the peace of mind of knowing that my Mam is safe and happy
   <!-- ACTIVITIES ----------------------------------------------------------->
   <section class="py-20 bg-gray-50" id="lifeat">
     <div class="max-w-7xl mx-auto px-6">
-      <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">Daily <span class="text-primary">Life &amp; Activities</span></h2>
+      <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">Life at <span class="text-primary">Danesbrook</span></h2>
 
       <div class="grid md:grid-cols-3 gap-8">
   <!-- Card -->
@@ -1182,48 +1182,81 @@ I live away, but have the peace of mind of knowing that my Mam is safe and happy
 
 
 
-  <!-- ACCOMMODATION & ENVIRONMENT ----------------------------------------->
-  <section class="py-20 bg-gray-50">
-    <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-3 gap-12" data-aos="fade-up">
-      <div class="lg:col-span-2">
-        <img src="assets/images/FAC5.jpg"
-             alt="Bright lounge"
-             class="rounded-3xl shadow-xl">
-      </div>
-      <div class="flex flex-col justify-center">
-        <h2 class="text-3xl font-bold mb-4">Spaces that Feel Like <span class="text-primary">Home</span></h2>
-        <p class="mb-6">
-          Choose from cosy private rooms, quiet reading corners, or lively communal lounges. Each space is designed for comfort, safety and independence.
-        </p>
-        <ul class="list-disc list-inside space-y-2">
-          <li>Private en-suite bedrooms (TV &amp; Wi-Fi included)</li>
-          <li>Two stylish lounges overlooking the gardens</li>
-          <li>Hairdressing salon &amp; therapy suite</li>
-          <li>24-hour call system and secure access</li>
-        </ul>
+  <!-- HOME SPACES -------------------------------------------------------------->
+<section class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+    <div data-aos="fade-right">
+      <img src="assets/images/ACT1.png"
+           alt="Bedroom or Lounge"
+           class="rounded-3xl ">
+    </div>
+    <div data-aos="fade-left">
+      <h2 class="text-3xl font-bold mb-4">Spaces that Feel Like <span class="text-primary">Home</span></h2>
+      <p class="mb-6">
+        Spaces designed for comfort, safety and independent living.
+      </p>
+      <a href="gallery.html" class="font-semibold text-primary hover:underline">> Gallery</a>
+    </div>
+  </div>
+</section>
+
+<!-- GARDEN ------------------------------------------------------------------>
+<section class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+    <div data-aos="fade-right">
+      <h2 class="text-3xl font-bold mb-4"><span class="text-primary">Garden</span></h2>
+      <p class="mb-6">
+        Easy access to our Dementia garden.
+      </p>
+      <a href="gallery.html" class="font-semibold text-primary hover:underline">Gallery ></a>
+    </div>
+    <div data-aos="fade-left">
+      <img src="assets/images/ACT2.png"
+           alt="Garden"
+           class="rounded-3xl ">
+    </div>
+  </div>
+</section>
+
+<!-- ACTIVITIES -------------------------------------------------------------->
+<section class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+    <div data-aos="fade-right">
+      <img src="assets/images/ACT3.png"
+           alt="Activities"
+           class="rounded-3xl ">
+    </div>
+    <div data-aos="fade-left">
+      <h2 class="text-3xl font-bold mb-4"><span class="text-primary">Activities</span></h2>
+      <p class="mb-6">
+        Organised activities with good social interaction.
+      </p>
+      <div class="space-x-4">
+        <a href="gallery.html" class="font-semibold text-primary hover:underline">Gallery ></a>
+        <a href="https://facebook.com" target="_blank" class="font-semibold text-primary hover:underline">Follow us on Facebook to know about the latest activites ></a>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-
-
-  <!-- DINING --------------------------------------------------------------->
-  <section class="py-20 bg-white">
-    <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
-      <div data-aos="fade-right">
-        <h2 class="text-3xl font-bold mb-4"> Food &amp; <span class="text-primary">Nutrition</span></h2>
-        <p class="mb-6">
-          From hearty roast dinners to light afternoon teas, our chefs create delicious, nutritionally-balanced menus – all reviewed by a qualified dietitian.
-        </p>
-        <p class="font-semibold text-primary">Special diets welcome • Flexible mealtimes • Family Sunday lunch</p>
-      </div>
-      <div data-aos="fade-left">
-        <img src="assets/images/FAC6.jpg"
-             alt="Chef plating food"
-             class="rounded-3xl shadow-xl">
-      </div>
+<!-- FOOD -------------------------------------------------------------------->
+<section class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+    <div data-aos="fade-right">
+      <h2 class="text-3xl font-bold mb-4"><span class="text-primary">Food</span></h2>
+      <p class="mb-6">
+        3 week menus of healthy home cooked food.
+      </p>
+      <a href="gallery.html" class="font-semibold text-primary hover:underline">Gallery ></a>
     </div>
-  </section>
+    <div data-aos="fade-left">
+      <img src="assets/images/ACT4.png"
+           alt="Food"
+           class="rounded-3xl ">
+    </div>
+  </div>
+</section>
+
 
 <!-- Team Philosophy Section -->
 <section class="py-20 bg-gradient-to-b from-surface to-white">
@@ -1258,7 +1291,7 @@ I live away, but have the peace of mind of knowing that my Mam is safe and happy
     </div>
 
     <!-- Card 2 -->
-    <div class="scroll-animate fade-blur" data-delay="400">
+    <div class="scroll-animate fade-blur" data-delay="400" >
         <div class="team-philosophy-card h-full flex flex-col">
             <div class="philosophy-icon-wrap">
                 <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
@@ -1269,7 +1302,7 @@ I live away, but have the peace of mind of knowing that my Mam is safe and happy
             <p class="text-text-secondary leading-relaxed flex-grow">
                 The Danesbrook "team" is made up of our managers, staff, helpers, residents' family members and lots of healthcare professionals. All of us share a common goal of wanting the best for our cherished residents.
             </p>
-            <div class="philosophy-accent mt-auto"></div>
+            <div class="philosophy-accent mt-auto" id="theteam"></div>
         </div>
     </div>
 </div>
@@ -1280,10 +1313,14 @@ I live away, but have the peace of mind of knowing that my Mam is safe and happy
         <div class="text-center mb-16" >
             <h2 class="font-inter font-bold text-3xl sm:text-4xl text-secondary mb-6 scroll-animate fade-blur">
                 <span class="relative z-10">
-                    The <span class="text-primary">Team</span>
+                    Expert Care <span class="text-primary">Team</span>
                     <span class="absolute -bottom-3 left-0 right-0 h-2 bg-gradient-to-r from-blue-500 to-purple-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></span>
                 </span>
             </h2>
+
+            <p class="text-lg text-text-secondary max-w-3xl mx-auto">
+Our highly qualified professionals bring decades of experience, ongoing training, and genuine compassion to every aspect of resident care.
+                </p>
             
         </div>
 
@@ -1607,8 +1644,9 @@ I live away, but have the peace of mind of knowing that my Mam is safe and happy
           <span class="absolute -bottom-3 left-0 right-0 h-2 bg-gradient-to-r from-blue-500 to-purple-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></span>
         </span>
       </h2>
-      <p class="text-xl lg:text-2xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
-        Make a real difference in people’s lives — build a rewarding career in care.
+<p class="text-lg text-text-secondary max-w-3xl mx-auto">
+            An amazing team made up of out dedicated staff, Welcome volunteers and resident family & friends.  Together making a read difference in our residents life.
+  
       </p>
     </div>
 
@@ -1617,44 +1655,57 @@ I live away, but have the peace of mind of knowing that my Mam is safe and happy
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl">
 
         <!-- Join Our Team Card -->
-        <div class="group bg-white rounded-2xl shadow-xl overflow-hidden transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 border border-gray-100">
-          <div class="relative overflow-hidden">
-            <img src="assets/images/EMP1.jpg" alt="Join Our Team" class="w-full h-60 object-cover transition-transform duration-700 group-hover:scale-105">
-          </div>
-          <div class="p-6 text-center">
-            <h3 class="text-xl font-bold text-secondary mb-3">Join Our Team</h3>
-            <p class="text-gray-600 leading-relaxed mb-4">
-              Become part of a compassionate care community — where your work truly makes a difference.
-            </p>
-            <p class="text-gray-500 text-sm mb-4">Call or email us for details of current opportunities.</p>
-            <div class="flex justify-center items-center text-primary font-semibold text-sm">
-              <span>Get in Touch</span>
-              <svg class="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-              </svg>
-            </div>
-          </div>
-        </div>
+<div class="group bg-white rounded-2xl shadow-xl overflow-hidden transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 border border-gray-100">
+  <div class="relative overflow-hidden">
+    <img src="assets/images/EMP1.jpg" alt="Join Our Team" class="w-full h-60 object-cover transition-transform duration-700 group-hover:scale-105">
+  </div>
+  <div class="p-6 text-center">
+    <h3 class="text-xl font-bold text-secondary mb-3">Join Our Team</h3>
+    <p class="text-gray-600 leading-relaxed mb-4">
+      Become part of our staff team.
+    </p>
+    <p class="text-gray-500 text-sm mb-4">Call or email us for details of current opportunities.</p>
 
-        <!-- Volunteer With Us Card -->
-        <div class="group bg-white rounded-2xl shadow-xl overflow-hidden transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 border border-gray-100">
-          <div class="relative overflow-hidden">
-            <img src="assets/images/EMP2.jpg" alt="Volunteer With Us" class="w-full h-60 object-cover transition-transform duration-700 group-hover:scale-105">
-          </div>
-          <div class="p-6 text-center">
-            <h3 class="text-xl font-bold text-secondary mb-3">Volunteer With Us</h3>
-            <p class="text-gray-600 leading-relaxed mb-4">
-              Share your time and kindness — bring joy and companionship to our residents.
-            </p>
-            <p class="text-gray-500 text-sm mb-4">Call or email us for details of current opportunities.</p>
-            <div class="flex justify-center items-center text-primary font-semibold text-sm">
-              <span>Get in Touch</span>
-              <svg class="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-              </svg>
-            </div>
-          </div>
-        </div>
+    <div class="flex justify-center items-center text-primary font-semibold text-sm mb-4">
+      <span>Get in Touch</span>
+      <svg class="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+      </svg>
+    </div>
+
+    <div class="flex justify-center space-x-3">
+      <a href="mailto:admin@danesbrook.com" class="bg-primary text-white px-4 py-2 rounded-full text-sm font-medium transition hover:bg-secondary">Email Us</a>
+      <a href="tel:02920552245" class="bg-gray-100 text-primary px-4 py-2 rounded-full text-sm font-medium transition hover:bg-gray-200">Call Us</a>
+    </div>
+  </div>
+</div>
+
+<!-- Volunteer With Us Card -->
+<div class="group bg-white rounded-2xl shadow-xl overflow-hidden transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 border border-gray-100">
+  <div class="relative overflow-hidden">
+    <img src="assets/images/EMP2.jpg" alt="Volunteer With Us" class="w-full h-60 object-cover transition-transform duration-700 group-hover:scale-105">
+  </div>
+  <div class="p-6 text-center">
+    <h3 class="text-xl font-bold text-secondary mb-3">Become a Volunteer</h3>
+    <p class="text-gray-600 leading-relaxed mb-4">
+      Come share your time and kindness.
+    </p>
+    <p class="text-gray-500 text-sm mb-4">Call or email us for details of current opportunities.</p>
+
+    <div class="flex justify-center items-center text-primary font-semibold text-sm mb-4">
+      <span>Get in Touch</span>
+      <svg class="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+      </svg>
+    </div>
+
+    <div class="flex justify-center space-x-3">
+      <a href="mailto:admin@danesbrook.com" class="bg-primary text-white px-4 py-2 rounded-full text-sm font-medium transition hover:bg-secondary">Email Us</a>
+      <a href="tel:02920552245" class="bg-gray-100 text-primary px-4 py-2 rounded-full text-sm font-medium transition hover:bg-gray-200">Call Us</a>
+    </div>
+  </div>
+</div>
+
 
       </div>
     </div>
@@ -1924,7 +1975,7 @@ I live away, but have the peace of mind of knowing that my Mam is safe and happy
 </script>
 
         <!-- Quick Contact Options -->
-    <section class="py-12 bg-white" id="contact">
+    <section class="py-12 bg-white" id="contact" style="margin-top: -40px;">
         <!-- Header -->
         <div class="text-center mb-16">
             <h2 class="font-inter font-bold text-3xl sm:text-4xl text-secondary mb-6 scroll-animate fade-blur">
@@ -1973,15 +2024,15 @@ I live away, but have the peace of mind of knowing that my Mam is safe and happy
         </div>
     </section>
 
- <section class="py-16 lg:py-24 bg-white">
+ <section class="py-16 lg:py-24 bg-white" style="margin-top: -45px;">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
                 <h2 class="text-3xl lg:text-4xl font-headline font-bold text-text-primary mb-4">
-                    Visit Us at <span class="text-primary">Danesbrook</span>
+                    Our <span class="text-primary">Address</span>
                 </h2>
-                <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+                <!-- <p class="text-lg text-text-secondary max-w-2xl mx-auto">
                     Located in the heart of Cardiff, easily accessible by car and public transport with ample parking available.
-                </p>
+                </p> -->
             </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
