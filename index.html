@@ -3423,6 +3423,50 @@ if (statsSection) {
         });
     </script>
 
+    <!-- Side Tab Language Switcher -->
+<div class="lang-tab">
+    <button class="lang-tab-button" onclick="toggleLanguageMenu()">
+        <span class="lang-icon">🌐</span>
+        <span class="current-lang">EN</span>
+    </button>
+    <div class="lang-menu" id="langMenu">
+        <a href="index.html" class="lang-item">
+            <span class="flag">🇬🇧</span>
+            <span>English</span>
+        </a>
+        <a href="welsh.html" class="lang-item">
+            <span class="flag">🏴󠁧󠁢󠁷󠁬󠁳󠁿</span>
+            <span>Cymraeg</span>
+        </a>
+    </div>
+</div>
+
+<script>
+  // For Option 2 - Side Tab
+function toggleLanguageMenu() {
+    const menu = document.getElementById('langMenu');
+    menu.classList.toggle('show');
+}
+
+// For Option 4 - Badge Switcher
+function switchLanguage() {
+    const current = document.querySelector('.badge-current').innerText;
+    if (current === 'EN') {
+        window.location.href = 'welsh.html';
+    } else {
+        window.location.href = 'index.html';
+    }
+}
+
+// Close menu when clicking outside (for Option 2)
+document.addEventListener('click', function(event) {
+    const langTab = document.querySelector('.lang-tab');
+    if (!langTab.contains(event.target)) {
+        document.getElementById('langMenu')?.classList.remove('show');
+    }
+});
+</script>
+
      <!-- Loader Overlay - Shows immediately -->
     <div class="loader-overlay" id="loaderOverlay">
         <div class="loader-content">
